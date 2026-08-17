@@ -100,9 +100,9 @@ Official LP profit is never extracted; it is generated and divided, in the open:
 | Flow | Share | Destination |
 | :--- | :--- | :--- |
 | Compounding | 70% | Auto-deepens liquidity (the flywheel) |
-| Vision Rail | 10% | Architect royalty (permanent) |
-| Labor Rail | 10% | Builders & auditors (per milestone) |
-| Patronage Reserve | 10% | Allocated at the architect's sole discretion as unilateral gifts to early patrons, not as guaranteed returns, dividends, or entitlements. |
+| Developers | 10% | Builders, auditors, and code contributors (per milestone) |
+| Operations | 10% | Architect, protocol upkeep, and long-term operations |
+| Foundation | 10% | Protocol fund for ecosystem growth and real-world deployment |
 
 ### 7. THE RAILS ARE FLOW-CLAIMS ONLY
 
@@ -113,7 +113,6 @@ Every rail is a claim on **profit flow**, never on the fixed base. No rail mints
 * The ladder is depth, not a price promise.
 * The flywheel compounds first, divides second.
 * Rails are paid only from real yield, in the open, on-chain.
-* The Patronage Reserve is a discretionary gift, never an investment contract.
 
 — **JackerArchitect.b5FH**
 
