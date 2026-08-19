@@ -34,9 +34,9 @@ The treasury's rule: *the principal is a fortress; the yield is the army.*
 The 10M Genesis LP — the Q1 release — is split into two engines:
 
 * **1% Pricing Pool (100,000)** — a dual-sided pool (token + seed USDC) that anchors the initial price P0.
-* **99% Ladder Pool (9,900,000)** — pure-token sell-side depth distributed from P0 to 10×P0.
+* **99% Ladder Pool (9,900,000)** — pure-token sell-side depth distributed from P0 upward to a defined boundary.
 
-The **10x milestone is not arbitrary**: it is the mathematical reciprocal of Q1's emission rate (100% ÷ 10% = 10x). Price amplification is endogenous to the release curve. *(Execution engine: Meteora DLMM bin ladder; see Document 004.)*
+The **ladder's upper boundary is not arbitrary**: it is mathematically derived from the Q1 emission rate, ensuring endogenous depth. *(Execution engine: Meteora DLMM bin ladder; see Document 004.)*
 
 ### 5. WHAT REMAINS: THE 60M RELEASE
 
