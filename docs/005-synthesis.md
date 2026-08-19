@@ -11,13 +11,13 @@ Zero pre-mine means the architect cannot rug. Dual-source isolation means stakin
 
 ### II. HOW IT BEGINS
 
-There is no presale and no insider token. At genesis, only 40M of the 100M base is deployed: 25M hard-locked as ballast, 5M held as a buffer drip-fed by real demand, and 10M as the genesis LP — 1% anchoring P0, 99% laying the ladder to 10x. The remaining 60M stays locked, dripping out through the √q curve.
+There is no presale and no insider token. At genesis, only 40M of the 100M base is deployed: 25M hard-locked as ballast, 5M held as a buffer drip-fed by real demand, and 10M as the genesis LP — 1% anchoring P0, 99% laying the ladder to a defined boundary. The remaining 60M stays locked, dripping out through the √q curve.
 
-Early building capital comes not from selling tokens but from the willing: a small circle of angels whose voluntary injection funds the R&D, in exchange for the angel rail. Everyone enters one of two ways — **real liquidity, or real work.**
+Early building capital comes not from selling tokens but from the willing: a small circle of Genesis Patrons whose voluntary contribution funds the R&D, in exchange for permanent recognition in the Ledger, alongside early builders bound by the Builders rail. Everyone enters one of two ways — **real liquidity, or real work.**
 
 ### III. HOW IT RUNS
 
-It is a self-turning flywheel. Real utility produces LP fees; 70% of them compound back into liquidity, 30% pay the Vision, Labor, and Angel rails; that incentive drives more optimization, more building, more funding; which brings more capacity and more utility; which produces more fees.
+It is a self-turning flywheel. Real utility produces LP fees; 70% of them compound back into liquidity, 30% is divided across the Vision, Builders, and Project Fund rails; that incentive drives more optimization, more building, more funding; which brings more capacity and more utility; which produces more fees.
 
 Supply drips predictably through √q — a ceiling, not a dump. Staking locks capital with the 49-season decay and the 49-day fractal slashing, rewarding the loyal and taxing the restless. Price is discovered freely on the ladder, shaped but never set.
 
