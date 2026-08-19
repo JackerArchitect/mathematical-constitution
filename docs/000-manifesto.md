@@ -1,7 +1,7 @@
 # DOCUMENT 000 — THE ARCHITECT'S MANIFESTO
 ## A Mathematical Constitution for a Public Digital Economy
 
-> *Philosophy is for the public. Mathematics is for the builders.*
+> *Philosophy is for the public. Mathematics are for the builders.*
 > *This document is the philosophy. The mathematics follows in Documents 001–004.*
 
 ### 0. PREAMBLE
@@ -33,7 +33,7 @@ The endgame is not a chart. It is a clearinghouse for real commerce — on-chain
 1. **Architecture before speculation.** We design the system before any market exists.
 2. **Rules before markets.** Every rule is written first, enforced by code, and immutable.
 3. **Zero pre-mine. No insider allocation. Ever.** The architect holds no free chips.
-4. **No work, no fish.** Every participant — architect, builder, angel — eats only when the system produces real yield.
+4. **No work, no fish.** Every participant — architect, builder, patron — eats only when the system produces real yield.
 5. **Transparency by construction.** If a rule cannot be enforced by code, it is not a rule; it is a wish.
 
 ### IV. THE ARCHITECT'S COVENANT
@@ -46,7 +46,7 @@ This is not charity. It is alignment.
 
 ### V. THE ECONOMIC COVENANT
 
-No value is extracted; value is generated. Official liquidity profits are never taken for personal gain. The majority compounds back into the system; the remainder is divided, in the open, among those who authored it, built it, and funded it. *(See Document 004.)*
+No value is extracted; value is generated. Official liquidity profits are never taken for personal gain. The majority compounds back into the system; the remainder is divided, in the open, across the rails that author, build, and expand it. *(See Document 004.)*
 
 There are two sources of supply, and they never mix: the scheduled unlock of a fixed base, and the elastic mint that rewards those who lock their capital. *(See Documents 002–003.)*
 
@@ -54,7 +54,7 @@ There are two sources of supply, and they never mix: the scheduled unlock of a f
 
 I am not looking for degens.
 
-I am looking for **Rust developers** who want their code to become the body of a constitution. For **DeFi researchers** who want to stress-test a real model. For **strategic liquidity providers** who want to own a toll booth, not flip a token. For **angels** who understand that the deepest yield comes from utility, not hype.
+I am looking for **Rust developers** who want their code to become the body of a constitution. For **DeFi researchers** who want to stress-test a real model. For **strategic liquidity providers** who want to own a toll booth, not flip a token. For **Genesis Patrons** who understand that true value comes from utility and time, not hype.
 
 The blueprints are unfurled. The base is cast.
 
