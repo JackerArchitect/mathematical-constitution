@@ -39,7 +39,7 @@ The first contracts to be specified and implemented:
 
 ## For builders
 
-I am the system architect; I do not write production code. If you implement, your code becomes the body of this constitution. Compensation is bound through transparent, on-chain revenue-sharing (the Labor rail) — no upfront salaries.
+I am the system architect; I do not write production code. If you implement, your code becomes the body of this constitution. Compensation is bound through transparent, on-chain revenue-sharing (the Builders rail) — no upfront salaries.
 
 Read the full architecture: [jackerteo.com](https://jackerteo.com)
 
