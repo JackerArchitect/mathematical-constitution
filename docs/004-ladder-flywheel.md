@@ -6,32 +6,30 @@
 
 ### 1. THE EXECUTION ENGINE
 
-Liquidity is deployed on **Meteora DLMM** — discrete, fixed-price bins with zero slippage inside each bin. The 99% ladder uses the **Bid-Ask single-sided strategy**: pure-token sell-side depth laid bin by bin above the current price. Price therefore climbs one bin at a time — a staircase, not a wick.
+Liquidity is deployed on **Meteora DLMM** — discrete, fixed-price bins with zero slippage inside each bin. The sell-side depth uses a single-sided strategy: pure-token liquidity laid bin by bin above the current price. Price therefore climbs one bin at a time — a staircase, not a wick.
 
-### 2. THE TWO POOLS (10M GENESIS LP)
+### 2. THE TWO POOLS (GENESIS LP)
 
-The 10M Genesis LP *(see Document 001, §4)* splits into two engines:
+The Genesis LP *(see Document 001)* splits into two engines:
 
-* **1% Pricing Pool (100,000)** — a dual-sided pool (token + seed USDC) that anchors the initial price P0.
-* **99% Ladder Pool (9,900,000)** — pure-token sell-side depth distributed from P0 to 10×P0.
+* **Pricing Pool** — a dual-sided pool (token + seed USDC) that anchors the initial price P0.
+* **Ladder Pool** — pure-token sell-side depth distributed from P0 upward to a defined upper boundary.
 
-### 3. THE 10x IS A LADDER WIDTH, NOT A PROMISE
+### 3. THE LADDER IS DEPTH, NOT A PRICE PROMISE
 
-The ladder's top is the mathematical reciprocal of Q1's emission rate: `100% ÷ 10% = 10x`. This is a **design parameter for depth**, endogenous to the release curve — not a price target. The market, not the protocol, decides whether it is reached *(see Document 002, §6)*.
+The ladder's upper boundary is a **design parameter for depth**, endogenous to the release curve — not a price target. The market, not the protocol, decides the price trajectory *(see Document 002, §6)*.
 
 ### 4. BUY-THROUGH PRESSURE MATH
 
-The calculable quantity is the USDC required to consume the ladder:
+The calculable quantity is the USDC required to consume the ladder depth:
 
-> `USDC to consume = Ladder Tokens × P0 × √M`  (M = ladder top ÷ P0)
+> `USDC to consume = Ladder Tokens × P0 × √M`  (M = upper boundary ÷ P0)
 
-Conversely, given buying pressure X, the multiplier reached is:
+Conversely, given buying pressure X, the multiplier reached is a function of that pressure against the locked token supply. 
 
-> `M = ( X ÷ (Ladder Tokens × P0) )²`
+*√M is the geometric mean — the average price at which the ladder sells.*
 
-*√M is the geometric mean of 1 and M — the average price at which the ladder sells.*
-
-**Illustrative:** 9,900,000 tokens at P0 = $0.005, M = 10 → USDC ≈ 9.9M × 0.005 × 3.162 ≈ **$156,500** of real demand to push the ladder to 10x. This is a stress-test tool, not a forecast.
+This is a stress-test tool for liquidity engineering, not a forecast.
 
 ### 5. THE APPRECIATION ENVELOPE (49 QUARTERS)
 
@@ -91,7 +89,7 @@ A suggested per-quarter appreciation multiplier, applied cumulatively to P0. It 
 
 **Phases:** I. Genesis Surge (Q1–Q2) · II. Glide Decay (Q3–Q10) · III. Fine Decay (Q11–Q17) · IV. Maturity (Q18–Q49, 1.02 ≡ ~8.24% annualized).
 
-**Internal checkpoints:** Q2 = 10× (the 99% ladder is fully absorbed) · Q5 ≈ 49× · Q49 ≈ 499×. If the market exceeds the envelope, the protocol does not chase; if it lags, the protocol does not defend. The envelope structures depth — nothing more.
+**Internal checkpoints** map the geometric decay of the multiplier. If the market exceeds the envelope, the protocol does not chase; if it lags, the protocol does not defend. The envelope structures depth — nothing more.
 
 ### 6. THE PROFIT FLYWHEEL (70/10/10/10)
 
@@ -100,9 +98,11 @@ Official LP profit is never extracted; it is generated and divided, in the open:
 | Flow | Share | Destination |
 | :--- | :--- | :--- |
 | Compounding | 70% | Auto-deepens liquidity (the flywheel) |
-| Developers | 10% | Builders, auditors, and code contributors (per milestone) |
-| Operations | 10% | Architect, protocol upkeep, and long-term operations |
-| Foundation | 10% | Protocol fund for ecosystem growth and real-world deployment |
+| Vision Rail | 10% | Founder |
+| Builders Rail | 10% | Team (code & audits) |
+| Project Fund | 10% | Future development & real-world deployment |
+
+Every rail is a claim on profit flow only — never on the base.
 
 ### 7. THE RAILS ARE FLOW-CLAIMS ONLY
 
