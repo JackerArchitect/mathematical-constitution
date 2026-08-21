@@ -14,7 +14,7 @@
 
 The current landscape of decentralized finance is dominated by extractive models: pre-mines, insider allocations, and inflationary mechanisms that transfer wealth from late entrants to early insiders. This whitepaper proposes a **Public Digital Economy**—a protocol-state built on Solana—designed to eliminate these vulnerabilities. 
 
-The system enforces a strict separation between fixed base supply and elastic staking rewards, governed by a deterministic **√q (Square Root) decay curve** and a 49-day fractal discipline mechanism. Liquidity is deployed via a discrete bin-ladder engine, and real yield is distributed through a transparent 70/10/10/10 flywheel. There are no promises of price appreciation; the protocol structures depth, while the market chooses price.
+The system enforces a strict separation between fixed base supply and elastic staking rewards, governed by a deterministic √q (Square Root) decay curve and a 49-day fractal discipline mechanism. Liquidity is deployed via a discrete bin-ladder engine, and real yield is distributed through a transparent 70/10/10/10 flywheel. There are no promises of price appreciation; the protocol structures depth, while the market chooses price.
 
 ---
 
@@ -51,7 +51,7 @@ At genesis, 40,000,000 units (40% of the base) are deployed to establish the fou
 | Buffer Vault | 5,000,000 | 5% | Temporary escrow, drip-fed by real demand. |
 | Genesis LP | 10,000,000 | 10% | Initial liquidity deployment. |
 
-The remaining 60,000,000 units (60%) are locked and released over 49 quarters via the **√q curve**.
+The remaining 60,000,000 units (60%) are locked and released over 49 quarters via the √q curve.
 
 ---
 
@@ -63,13 +63,13 @@ The fixed base is unlocked predictably, front-loaded to seed early liquidity, an
 
 | Quarter (q) | Cumulative Release | Remaining Pool | Marginal Release Rate (d/dq) |
 | :--- | :--- | :--- | :--- |
-| Q1 | 10,000,000 | 60,000,000 | 5,000,000 /季 (High Bootstrap) |
-| Q4 | 20,000,000 | 50,000,000 | 2,500,000 /季 |
-| Q9 | 30,000,000 | 40,000,000 | 1,666,666 /季 |
-| Q16 | 40,000,000 | 30,000,000 | 1,250,000 /季 |
-| Q25 | 50,000,000 | 20,000,000 | 1,000,000 /季 |
-| Q36 | 60,000,000 | 10,000,000 | 833,333 /季 |
-| Q49 | 70,000,000 | 0 | 714,285 /季 (Stable Long Tail) |
+| Q1 | 10,000,000 | 60,000,000 | 5,000,000 / Quarter (High Bootstrap) |
+| Q4 | 20,000,000 | 50,000,000 | 2,500,000 / Quarter |
+| Q9 | 30,000,000 | 40,000,000 | 1,666,666 / Quarter |
+| Q16 | 40,000,000 | 30,000,000 | 1,250,000 / Quarter |
+| Q25 | 50,000,000 | 20,000,000 | 1,000,000 / Quarter |
+| Q36 | 60,000,000 | 10,000,000 | 833,333 / Quarter |
+| Q49 | 70,000,000 | 0 | 714,285 / Quarter (Stable Long Tail) |
 
 **Mathematical Guarantee:** Because the derivative $R'(q) = \frac{5,000,000}{\sqrt{q}}$ is a continuous, monotonically decreasing function, the system guarantees **zero cliff effects**. The release rate smoothly converges, preventing any sudden supply shocks to the market.
 
